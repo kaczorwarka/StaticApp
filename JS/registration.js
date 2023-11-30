@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const homepage = "homePage.html";
 
     loginButton.addEventListener('click', () => {
-        window.location.replace("loginPage.html");
+        window.location.replace("index.html");
     });
 
     registryButton.addEventListener('click', () => {

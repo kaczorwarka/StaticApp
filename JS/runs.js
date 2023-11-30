@@ -48,7 +48,7 @@
         });
 
         logOutButton.addEventListener('click', () => {
-            window.location.replace("loginPage.html");
+            window.location.replace("index.html");
         });
 
         userInfo.addEventListener('click', () => {
@@ -320,7 +320,7 @@ function deleteUser(user){
     fetch(url, {method: 'Delete'})
     .then(response => {
         if (response.ok){
-            window.location.replace("loginPage.html");
+            window.location.replace("index.html");
         } else {
             throw new Error(response.status);
         }
