@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     
         userDelete.addEventListener('click', () => {
-            let url = `https://runmanagement.azurewebsites.net//DB/Users/delete/${user.email}/${user.password}`
+            let url = `https://runmanagement.azurewebsites.net/DB/Users/delete/${user.email}/${user.password}`
             fetch(url, {method: 'Delete'})
             .then(response => {
                 if (response.ok){
@@ -75,14 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
         getRuns(runList, eventsCount, user.email, user.password, 'all');
 
         function displayImage() {
-            let url = `https://runmanagement.azurewebsites.net//DB/Users/getImage/${user.email}/${user.password}`;
+            let url = `https://runmanagement.azurewebsites.net/DB/Users/getImage/${user.email}/${user.password}`;
             picture.src = url; 
         }
     }
 });
 
 function getRuns (runList, eventsNumber, email, password, type) {
-    let url = `https://runmanagement.azurewebsites.net//DB/Runs/get/${type}/${email}/${password}`
+    let url = `https://runmanagement.azurewebsites.net/DB/Runs/get/${type}/${email}/${password}`
     fetch(url, {
         method: 'GET'
         })
