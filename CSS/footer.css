@@ -1,0 +1,12 @@
+footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(70, 70, 70);
+    color: rgb(241, 241, 241);
+    padding: 20px;
+    bottom: auto;
+    height: auto;
+}
+

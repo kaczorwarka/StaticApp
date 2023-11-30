@@ -1,0 +1,109 @@
+body {
+    min-height: 95vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+table.run-table {
+    margin: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-spacing: 0px;
+}
+
+.run-table th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.run-table th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.run-table th{
+    color: rgb(241, 241, 241);
+    background-color: rgb(49, 49, 49);
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+}
+
+.odd td{
+    background-color: rgb(224, 224, 224);
+}
+
+.even td{
+    background-color: rgb(250, 250, 250);
+}
+
+.data-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.buttons {
+    width: 80px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transition: opacity 0.15s;
+}
+
+.buttons:hover {
+    opacity: 0.8;
+}
+
+.modify-button {
+    background-color: rgb(241, 241, 241);
+    color: rgb(70, 70, 70);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(70, 70, 70);
+}
+
+.odd .modify-button {
+    background-color: rgb(224, 224, 224);
+}
+
+.even .modify-button {
+    background-color:  rgb(250, 250, 250);
+}
+
+.delete-button {
+    background-color: rgb(182, 0, 0);
+    color: rgb(241, 241, 241);
+    border-width: 0;
+}
+
+.add {
+    border-radius: 30px;
+    background-color: rgb(77, 175, 32);
+    border-width: 0px;
+    cursor: pointer;
+    padding: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.newInput {
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(151, 151, 151);
+    background-color: rgb(224, 224, 224);
+    width: 80%;
+}
+
+h1 {
+    cursor: pointer;
+}

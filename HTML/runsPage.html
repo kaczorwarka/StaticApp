@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>Runs</title>
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="../CSS/general.css">
+            <link rel="stylesheet" href="../CSS/header.css">
+            <link rel="stylesheet" href="../CSS/footer.css">
+            <link rel="stylesheet" href="../CSS/runs.css">
+
+            <script src="https://kit.fontawesome.com/1cd7d33de6.js" crossorigin="anonymous"></script>
+            
+    </head>
+    <body>
+        <main>
+            <div class="header">
+                <div class="left-header">
+                    <h1 id="home-button">Run Managment</h1>
+                </div>
+                <div class="right-header">
+                    <button class="basic-button expanded-button" id="user">
+                        User 
+                        <div class="lower">
+                            &#62;
+                        </div>
+                        <div class="dropdown">
+                            <p id="user-info">Information</p>
+                            <p id="user-modify">Modify</p>
+                            <p id="user-delete">Delete</p>
+                        </div>
+                    </button>
+                    <button class="basic-button expanded-button" id="runs">
+                        Runs
+                        <div class="lower">
+                            &#62;
+                        </div>
+                        <div class="dropdown">
+                            <p id="run-info">All Runs</p>
+                            <p id="future-runs">Future Runs</p>
+                            <p id="past-runs">Past Runs</p>
+                        </div>
+                    </button>
+                    <button class="basic-button single-button" id="log-out">Log Out</button>
+                </div>
+            </div>
+            <div>
+                <table class="run-table" id="table-run">
+                    <tr>
+                        <th>Name</th>
+                        <th>Distance</th>
+                        <th>Date</th>
+                        <th>Localization</th>
+                        <th>Website</th>
+                        <th>Type</th>
+                        <th>Time</th>
+                        <th>Ranking Place</th>
+                        <th>
+                            <button class="add" id="run-add">
+                                <i class="fa-solid fa-plus" style="color: rgb(49, 49, 49);"></i>
+                            </button>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <p>Kuba Kaczmarski</p>
+            <p>WCY20IJ1S1</p>
+            <p>Wojskowa Akademia Techniczna</p>
+        </footer>
+    </body>
+    <script src="../JS/runs.js"></script>
+</html>
+

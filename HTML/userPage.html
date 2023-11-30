@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>User</title>
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="../CSS/general.css">
+            <link rel="stylesheet" href="../CSS/header.css">
+            <link rel="stylesheet" href="../CSS/footer.css">
+            <link rel="stylesheet" href="../CSS/user.css">
+
+            <script src="https://kit.fontawesome.com/1cd7d33de6.js" crossorigin="anonymous"></script>
+            <script src="../JS/user.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="header">
+                <div class="left-header">
+                    <h1 id="home-button">Run Managment</h1>
+                </div>
+                <div class="right-header">
+                    <button class="basic-button expanded-button" id="user">
+                        User 
+                        <div class="lower">
+                            &#62;
+                        </div>
+                        <div class="dropdown">
+                            <p id="user-info">Information</p>
+                            <p id="user-modify">Modify</p>
+                            <p id="user-delete">Delete</p>
+                        </div>
+                    </button>
+                    <button class="basic-button expanded-button" id="runs">
+                        Runs
+                        <div class="lower">
+                            &#62;
+                        </div>
+                        <div class="dropdown">
+                            <p id="run-info">All Runs</p>
+                            <p id="future-runs">Future Runs</p>
+                            <p id="past-runs">Past Runs</p>
+                        </div>
+                    </button>
+                    <button class="basic-button single-button" id="log-out">Log Out</button>
+                </div>
+            </div>
+            <div class="user-body">
+                <div class="profile-picture">
+                    <img class="picture" src="../pictures/EmptyUser.JPG" id="picture">
+                    <input type="file" id="photo">
+                    <label for="photo" id="photo-label"><i class="fa-solid fa-camera" style="color: #fdfdfd;"></i></label>
+                </div>
+                <div class="inner-user">
+                    <p class="data" id="name">Name</p>
+                    <p class="data" id="last-name">LastName</p>
+                    <p class="data" id="email">Email</p>
+                    <p class="data" id="gender">Gender</p>
+                    <p class="data" id="date-of-birth">DateOfBirth</p>
+                    <div class="data-buttons">
+                        <button class="buttons modify-button" id="modify" type="button">Modify</button>
+                        <button class="buttons delete-button" id="delete" type="button">Delete</button>
+                    </div>  
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Kuba Kaczmarski</p>
+            <p>WCY20IJ1S1</p>
+            <p>Wojskowa Akademia Techniczna</p>
+        </footer>
+    </body>
+</html>

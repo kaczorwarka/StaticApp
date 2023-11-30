@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>Registration</title>
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="../CSS/general.css">
+            <link rel="stylesheet" href="../CSS/header.css">
+            <link rel="stylesheet" href="../CSS/footer.css">
+            <link rel="stylesheet" href="../CSS/login.css">
+            <script src="../JS/registration.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left-header">
+                <h1 id="login-button">Run Managment</h1>
+            </div>
+        </div>
+        <main>
+            <div class="login-body">
+                <h2>Sing Up</h2>
+                <form>
+                    <div class="inputs">
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input class="text-input" id="email" type="text">
+                        </div>
+                        <div class="input">
+                            <label for="password">Password</label>
+                            <input class="text-input" id="password" type="password">
+                        </div>
+                        <div class="input">
+                            <label for="name">Name</label>
+                            <input class="text-input" id="name" type="text">
+                        </div>
+                        <div class="input">
+                            <label for="last-name">Last Name</label>
+                            <input class="text-input" id="last-name" type="text">
+                        </div>
+                        <div class="input">
+                            <label for="gender">Gender</label>
+                            <div class="gender-button">
+                                <div class="gender-option">
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="male" name="gender" value="Male">
+                                </div>
+                                <div class="gender-option">
+                                    <label for="female">Female</label>
+                                    <input type="radio" id="female" name="gender" value="Female">
+                                </div>
+                                <div class="gender-option">
+                                    <label for="other">Other</label>
+                                    <input type="radio" id="other" name="gender" value="Other">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label for="date-of-birth">Date Of Birth</label>
+                            <input type="date" class="text-input" id="date-of-birth">
+                        </div>
+                    </div>
+                    <div class="reg-button">
+                        <button class="basic-button registry-button" type="button" id="registry">Register</button>
+                    </div>  
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>Kuba Kaczmarski</p>
+            <p>WCY20IJ1S1</p>
+            <p>Wojskowa Akademia Techniczna</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    min-height: 95vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.login-body {
+    background-color: rgb(241, 241, 241);
+    margin: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 400px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    padding: 30px;
+    padding-left: 30px;
+}
+
+.login-body form {
+
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    width: 300px;
+}
+
+.login-body h2 {
+    font-size: 30px;
+    margin: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(50, 50, 50)
+}
+
+.inputs {
+    margin-top: 20px;
+}
+
+.input {
+    margin-bottom: 30px;
+}
+
+.input label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.text-input{
+    font-size: 15px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(190, 190, 190);
+    background-color: rgb(241, 241, 241);
+    height:30px;
+    width: 97%;
+}
+
+.log-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 70px;
+    justify-items: center;
+    align-items: center;
+}
+
+.basic-button {
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transition: opacity 0.15s;
+}
+
+.basic-button:hover {
+    opacity: 0.8;
+}
+
+.login-button {
+    width: 100px;
+    background-color: rgb(241, 241, 241);
+    color: rgb(70, 70, 70);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(70, 70, 70);
+}
+
+.signup-button {
+    width: 100px;
+    background-color: rgb(70, 70, 70);
+    color: rgb(241, 241, 241);
+    border-width: 0;
+}
+
+.gender-button {
+    margin-top: 10px;
+}
+
+.gender-option {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 17px;
+    width: 70px;
+    text-align: center;
+}
+
+.gender-option input{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.reg-button {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 70px;
+}
+
+.registry-button {
+    background-color: rgb(70, 70, 70);
+    color: rgb(241, 241, 241);
+    border-width: 0;
+}
+
+h1 {
+    cursor: pointer;
+}

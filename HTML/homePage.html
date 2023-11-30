@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/general.css">
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/footer.css">
+        <link rel="stylesheet" href="../CSS/home.css">
+        <script src="../JS/home.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="header">
+                <div class="left-header">
+                    <h1 id="home-button">Run Managment</h1>
+                </div>
+                <div class="right-header">
+                    <button class="basic-button expanded-button" id="user">
+                        User 
+                        <div class="lower">
+                            &#62;
+                        </div>
+                        <div class="dropdown">
+                            <p id="user-info">Information</p>
+                            <p id="user-modify">Modify</p>
+                            <p id="user-delete">Delete</p>
+                        </div>
+                    </button>
+                    <button class="basic-button expanded-button" id="runs">
+                        Runs
+                        <div class="lower">
+                            &#62;
+                        </div>
+                        <div class="dropdown">
+                            <p id="run-info">All Runs</p>
+                            <p id="future-runs">Future Runs</p>
+                            <p id="past-runs">Past Runs</p>
+                        </div>
+                    </button>
+                    <button class="basic-button single-button" id="log-out">Log Out</button>
+                </div>
+            </div>
+            <div class="home-body">
+                <div class="user-section">
+                    <div class="profile-picture">
+                        <img class="picture" id="picture" src="../pictures/EmptyUser.JPG">
+                    </div>
+                    <div class="user-data">
+                        <p class="name" id="name">
+                            Name
+                        </p>
+                        <p class="last-name" id="last-name">
+                            Last Name
+                        </p>
+                    </div>
+                    <div class="other-info">
+                        <p id="events-count">
+                            Events: 10
+                        </p>
+                    </div>
+                </div>
+                <div class="runs-section">
+                    <div class="list-description">
+                        <h3>Nearest run events</h3>
+                    </div>
+                    <div class="runs-list">
+                        <ul id="runs-ul">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Kuba Kaczmarski</p>
+            <p>WCY20IJ1S1</p>
+            <p>Wojskowa Akademia Techniczna</p>
+        </footer> 
+    </body>
+</html>
