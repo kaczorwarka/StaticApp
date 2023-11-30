@@ -27,7 +27,7 @@
 
     if (user){
         
-        let url = `http://localhost:8080/DB/Runs/get/${runsStatus}/${user.email}/${user.password}`
+        let url = `https://runmanagement.azurewebsites.net//DB/Runs/get/${runsStatus}/${user.email}/${user.password}`
         fetch(url, {
             method: 'GET'
         })
@@ -122,7 +122,7 @@
             necessaryField = checkField(row.cells[2].children[0]) && necessaryField;
 
             if (necessaryField) {
-                fetch('http://localhost:8080/DB/Runs/add', {
+                fetch('https://runmanagement.azurewebsites.net//DB/Runs/add', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -162,7 +162,7 @@
         } else if (modifing && num === actualNum) {
             let row = runTable.rows[num];
 
-            let url = `http://localhost:8080/DB/Runs/put/${oldName}/${user.email}/${user.password}`;
+            let url = `https://runmanagement.azurewebsites.net//DB/Runs/put/${oldName}/${user.email}/${user.password}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -241,7 +241,7 @@
             let row = runTable.rows[num];
             let name = row.cells[0].firstChild.data;
 
-            let url = `http://localhost:8080/DB/Runs/delete/${name}/${user.email}/${user.password}`
+            let url = `https://runmanagement.azurewebsites.net//DB/Runs/delete/${name}/${user.email}/${user.password}`
             fetch(url, {method: 'Delete'})
             .then(response => {
                 if (response.ok){
@@ -316,7 +316,7 @@ function checkField(element) {
 }
 
 function deleteUser(user){
-    let url = `http://localhost:8080/DB/Users/delete/${user.email}/${user.password}`
+    let url = `https://runmanagement.azurewebsites.net//DB/Users/delete/${user.email}/${user.password}`
     fetch(url, {method: 'Delete'})
     .then(response => {
         if (response.ok){

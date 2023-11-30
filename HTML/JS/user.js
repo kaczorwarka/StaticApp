@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData();
             formData.append('file', file);
 
-            let url = `http://localhost:8080/DB/Users/uploadImage/${user.email}/${user.password}`;
+            let url = `https://runmanagement.azurewebsites.net//DB/Users/uploadImage/${user.email}/${user.password}`;
             fetch(url, {
                 method: 'POST',
                 body: formData
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
                 
-                let url = `http://localhost:8080/DB/Users/put/${user.email}/${user.password}`;
+                let url = `https://runmanagement.azurewebsites.net//DB/Users/put/${user.email}/${user.password}`;
                 console.log(genderInput);
                 fetch(url, {
                     method: 'PUT',
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         function displayImage() {
-            let url = `http://localhost:8080/DB/Users/getImage/${user.email}/${user.password}`;
+            let url = `https://runmanagement.azurewebsites.net//DB/Users/getImage/${user.email}/${user.password}`;
             picture.src = url; 
         }
     }
@@ -244,7 +244,7 @@ function generateRadio(value, checked) {
 }
 
 function deleteUser(user){
-    let url = `http://localhost:8080/DB/Users/delete/${user.email}/${user.password}`
+    let url = `https://runmanagement.azurewebsites.net//DB/Users/delete/${user.email}/${user.password}`
     fetch(url, {method: 'Delete'})
     .then(response => {
         if (response.ok){
