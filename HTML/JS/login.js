@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fieldsNotEmpty = SetReminder(password, passwordLbl) && fieldsNotEmpty;
 
         if (fieldsNotEmpty) {
-            let url = `http://localhost:8080/DB/Users/get/${email.value}/${password.value}`
+            let url = `https://f671-83-31-87-60.ngrok-free.app/DB/Users/get/${email.value}/${password.value}`
 
             fetch(url, {
                 method: 'GET'

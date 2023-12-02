@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     
         userDelete.addEventListener('click', () => {
-            let url = `http://localhost:8080/DB/Users/delete/${user.email}/${user.password}`
+            let url = `https://f671-83-31-87-60.ngrok-free.app/DB/Users/delete/${user.email}/${user.password}`
             fetch(url, {method: 'Delete'})
             .then(response => {
                 if (response.ok){
@@ -75,14 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
         getRuns(runList, eventsCount, user.email, user.password, 'all');
 
         function displayImage() {
-            let url = `http://localhost:8080/DB/Users/getImage/${user.email}/${user.password}`;
+            let url = `https://f671-83-31-87-60.ngrok-free.app/DB/Users/getImage/${user.email}/${user.password}`;
             picture.src = url; 
         }
     }
 });
 
 function getRuns (runList, eventsNumber, email, password, type) {
-    let url = `http://localhost:8080/DB/Runs/get/${type}/${email}/${password}`
+    let url = `https://f671-83-31-87-60.ngrok-free.app/DB/Runs/get/${type}/${email}/${password}`
     fetch(url, {
         method: 'GET'
         })
