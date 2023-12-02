@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fieldsNotEmpty = SetReminder(password, passwordLbl) && fieldsNotEmpty;
 
         if (fieldsNotEmpty) {
-            let url = `https://runmanagement.azurewebsites.net/DB/Users/get/${email.value}/${password.value}`
+            let url = `http://localhost:8080/DB/Users/get/${email.value}/${password.value}`
 
             fetch(url, {
                 method: 'GET'
