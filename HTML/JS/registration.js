@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fieldsNotEmpty = SetReminder(dateOfBirth, dateOfBirthLbl) && fieldsNotEmpty;
         
         if (fieldsNotEmpty) {
-            fetch('https://app-backend-231203140654.azurewebsites.net/DB/Users/add', {
+            fetch('https://app-backend-231203142707.azurewebsites.net/DB/Users/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
