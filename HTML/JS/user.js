@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     
         picture.onerror = function () {
-           picture.src = "../pictures/EmptyUser.JPG";
+           picture.src = "pictures/EmptyUser.JPG";
         };
 
         displayImage();
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData();
             formData.append('file', file);
 
-            let url = `https://f671-83-31-87-60.ngrok-free.app/DB/Users/uploadImage/${user.email}/${user.password}`;
+            let url = `https://app-backend-231203140654.azurewebsites.net/DB/Users/uploadImage/${user.email}/${user.password}`;
             fetch(url, {
                 method: 'POST',
                 body: formData
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
                 
-                let url = `https://f671-83-31-87-60.ngrok-free.app/DB/Users/put/${user.email}/${user.password}`;
+                let url = `https://app-backend-231203140654.azurewebsites.net/DB/Users/put/${user.email}/${user.password}`;
                 console.log(genderInput);
                 fetch(url, {
                     method: 'PUT',
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         function displayImage() {
-            let url = `https://f671-83-31-87-60.ngrok-free.app/DB/Users/getImage/${user.email}/${user.password}`;
+            let url = `https://app-backend-231203140654.azurewebsites.net/DB/Users/getImage/${user.email}/${user.password}`;
             picture.src = url; 
         }
     }
@@ -244,7 +244,7 @@ function generateRadio(value, checked) {
 }
 
 function deleteUser(user){
-    let url = `https://f671-83-31-87-60.ngrok-free.app/DB/Users/delete/${user.email}/${user.password}`
+    let url = `https://app-backend-231203140654.azurewebsites.net/DB/Users/delete/${user.email}/${user.password}`
     fetch(url, {method: 'Delete'})
     .then(response => {
         if (response.ok){

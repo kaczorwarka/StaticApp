@@ -27,7 +27,7 @@
 
     if (user){
         
-        let url = `https://f671-83-31-87-60.ngrok-free.app/DB/Runs/get/${runsStatus}/${user.email}/${user.password}`
+        let url = `https://app-backend-231203140654.azurewebsites.net/DB/Runs/get/${runsStatus}/${user.email}/${user.password}`
         fetch(url, {
             method: 'GET'
         })
@@ -122,7 +122,7 @@
             necessaryField = checkField(row.cells[2].children[0]) && necessaryField;
 
             if (necessaryField) {
-                fetch('https://f671-83-31-87-60.ngrok-free.app/DB/Runs/add', {
+                fetch('https://app-backend-231203140654.azurewebsites.net/DB/Runs/add', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -162,7 +162,7 @@
         } else if (modifing && num === actualNum) {
             let row = runTable.rows[num];
 
-            let url = `https://f671-83-31-87-60.ngrok-free.app/DB/Runs/put/${oldName}/${user.email}/${user.password}`;
+            let url = `https://app-backend-231203140654.azurewebsites.net/DB/Runs/put/${oldName}/${user.email}/${user.password}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -241,7 +241,7 @@
             let row = runTable.rows[num];
             let name = row.cells[0].firstChild.data;
 
-            let url = `https://f671-83-31-87-60.ngrok-free.app/DB/Runs/delete/${name}/${user.email}/${user.password}`
+            let url = `https://app-backend-231203140654.azurewebsites.net/DB/Runs/delete/${name}/${user.email}/${user.password}`
             fetch(url, {method: 'Delete'})
             .then(response => {
                 if (response.ok){
@@ -316,7 +316,7 @@ function checkField(element) {
 }
 
 function deleteUser(user){
-    let url = `https://f671-83-31-87-60.ngrok-free.app/DB/Users/delete/${user.email}/${user.password}`
+    let url = `https://app-backend-231203140654.azurewebsites.net/DB/Users/delete/${user.email}/${user.password}`
     fetch(url, {method: 'Delete'})
     .then(response => {
         if (response.ok){
