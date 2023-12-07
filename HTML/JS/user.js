@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.text())
             .then(imageName => {
                 displayImage();
+                window.location.replace("userPage.html");
             })
             .catch(error => console.error('Error:', error));
         })
